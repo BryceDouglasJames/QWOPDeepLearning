@@ -3,7 +3,7 @@ name = "QWOPDeepLearning"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
-    {name = "BryceDouglasJames", email = "brycejames1214@yahoo.com"},
+    {name = "BryceDouglasJames"},
 ]
 dependencies = [
     "selenium>=4.19.0",
