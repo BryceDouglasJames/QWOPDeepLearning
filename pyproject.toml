@@ -8,6 +8,8 @@ authors = [
 dependencies = [
     "selenium>=4.19.0",
     "pytesseract>=0.3.10",
+    "torch>=2.2.2",
+    "torchvision>=0.17.2",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
