@@ -10,6 +10,9 @@ dependencies = [
     "pytesseract>=0.3.10",
     "torch>=2.2.2",
     "torchvision>=0.17.2",
+    "ipykernel>=6.29.4",
+    "tensorboard>=2.4.1",
+    "torch-tb-profiler>=0.2.0"
 ]
 requires-python = "==3.12.*"
 readme = "README.md"

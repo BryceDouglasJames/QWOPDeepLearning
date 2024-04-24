@@ -7,7 +7,7 @@ from agent import PPOAgent
 
 def main():
     agent = PPOAgent()
-    agent.train(total_episodes=100)
+    agent.train(total_episodes=1)
     agent.close()
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from torch.utils.tensorboard import SummaryWriter
 import torch.optim as optim
 from torch.distributions import Categorical
 import torch.nn.functional as F
@@ -63,6 +64,9 @@ class PPOAgent:
                 state = preprocess_image(self.env.get_player_state())
             print(f'Episode {episode + 1}: Total Reward = {total_reward}')
             self.env.reset_game()
+        writer = SummaryWriter('runs/model_architecture')
+        writer.add_graph(self.model, state.unsqueeze(0))
+        writer.close()
     
     def step(self, action):
         self.env.press_key(action[0], action[1])
